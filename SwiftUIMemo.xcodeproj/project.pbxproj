@@ -10,9 +10,9 @@
 		7D8D2BAA2A85D70400196E67 /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D2BA92A85D70400196E67 /* SwiftUIMemoApp.swift */; };
 		7D8D2BAC2A85D70400196E67 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D2BAB2A85D70400196E67 /* Persistence.swift */; };
 		7D8D2BAF2A85D70400196E67 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D2BAD2A85D70400196E67 /* SwiftUIMemo.xcdatamodeld */; };
-		7D8D2BB12A85D70400196E67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D2BB02A85D70400196E67 /* ContentView.swift */; };
 		7D8D2BB32A85D70500196E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8D2BB22A85D70500196E67 /* Assets.xcassets */; };
 		7D8D2BB72A85D70500196E67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D8D2BB62A85D70500196E67 /* Preview Assets.xcassets */; };
+		7D8D2BBE2A85DCE100196E67 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8D2BBD2A85DCE100196E67 /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		7D8D2BA92A85D70400196E67 /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
 		7D8D2BAB2A85D70400196E67 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7D8D2BAE2A85D70400196E67 /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
-		7D8D2BB02A85D70400196E67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D8D2BB22A85D70500196E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D8D2BB42A85D70500196E67 /* SwiftUIMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIMemo.entitlements; sourceTree = "<group>"; };
 		7D8D2BB62A85D70500196E67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D8D2BBD2A85DCE100196E67 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,12 @@
 		7D8D2BA82A85D70400196E67 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				7D8D2BC02A85DDB900196E67 /* Memory */,
+				7D8D2BBF2A85DD7000196E67 /* CoreData */,
 				7D8D2BA92A85D70400196E67 /* SwiftUIMemoApp.swift */,
-				7D8D2BAB2A85D70400196E67 /* Persistence.swift */,
-				7D8D2BB02A85D70400196E67 /* ContentView.swift */,
+				7D8D2BBD2A85DCE100196E67 /* MainListView.swift */,
 				7D8D2BB22A85D70500196E67 /* Assets.xcassets */,
 				7D8D2BB42A85D70500196E67 /* SwiftUIMemo.entitlements */,
-				7D8D2BAD2A85D70400196E67 /* SwiftUIMemo.xcdatamodeld */,
 				7D8D2BB52A85D70500196E67 /* Preview Content */,
 			);
 			path = SwiftUIMemo;
@@ -73,6 +73,23 @@
 				7D8D2BB62A85D70500196E67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D8D2BBF2A85DD7000196E67 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7D8D2BAB2A85D70400196E67 /* Persistence.swift */,
+				7D8D2BAD2A85D70400196E67 /* SwiftUIMemo.xcdatamodeld */,
+			);
+			name = CoreData;
+			path = "책ㄷㅇ";
+			sourceTree = "<group>";
+		};
+		7D8D2BC02A85DDB900196E67 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D8D2BAF2A85D70400196E67 /* SwiftUIMemo.xcdatamodeld in Sources */,
+				7D8D2BBE2A85DCE100196E67 /* MainListView.swift in Sources */,
 				7D8D2BAA2A85D70400196E67 /* SwiftUIMemoApp.swift in Sources */,
-				7D8D2BB12A85D70400196E67 /* ContentView.swift in Sources */,
 				7D8D2BAC2A85D70400196E67 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
